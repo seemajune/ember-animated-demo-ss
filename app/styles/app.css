@@ -1,0 +1,144 @@
+* {
+  font-family: "Amiko", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  width: 100%;
+  font-size: 20px;
+  background: orange;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+.shapes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shapes .animated-container {
+  padding: 1em;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid peachpuff;
+  background: peachpuff;
+}
+.body {
+  padding: 2em;
+}
+.links a {
+  display: inline-flex;
+  height: 100%;
+  line-height: 50px;
+  padding: 0 2em;
+}
+
+.links a,
+.links a:active,
+.links a:visited {
+  text-decoration: none;
+}
+
+a.active {
+  background: orange;
+}
+
+.circles {
+  padding: 1em;
+}
+
+.circle {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  background: black;
+}
+
+.circle span {
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 0;
+}
+
+button.sprites-btn {
+  padding: 4px 10px;
+  font-size: 16px;
+  border: 1px solid peachpuff;
+  color: darkslateblue;
+  border-radius: 20px;
+}
+
+button.sprites-btn:hover,
+button.sprites-btn:active {
+  background: orange;
+  cursor: pointer;
+}
+
+.expandable-block {
+  width: 100%;
+  display: block;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+menuitem.expandable-block-item {
+  display: flex;
+  background: orange;
+}
+
+.rectangle {
+  width: 300px;
+  height: 100px;
+  background: darkslateblue;
+  position: relative;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: teal;
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 0 100px 100px 100px;
+  border-color: transparent transparent #007bff transparent;
+}
+
+.trapezoid {
+  border-bottom: 100px solid cyan;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+.trapezoid,
+.triangle,
+.square,
+.rectangle {
+  cursor: pointer;
+}
+.key {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1em;
+}
+.buttons {
+  padding: 0 1em 0.5em;
+}

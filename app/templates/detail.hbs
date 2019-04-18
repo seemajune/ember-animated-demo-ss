@@ -1,0 +1,5 @@
+<AnimatedContainer>
+  {{#animated-value model use=transition initialInsertion=true finalRemoval=true duration=1000 as |m|}}
+    <div class={{m.name}}></div>
+  {{/animated-value}}
+</AnimatedContainer>

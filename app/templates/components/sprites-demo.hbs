@@ -1,0 +1,15 @@
+{{! template-lint-disable }}
+<div class="key">
+  <span style="color: green;">insertedSprite = green</span>
+  <span style="color: blue;">keptSprite = blue</span>
+  <span style="color: red;">removedSprite = red</span>
+</div>
+<div class="buttons">
+  <button class="sprites-btn" {{action "addItem"}}>insert</button>
+  <button class="sprites-btn" {{action "deleteItem"}}>remove</button>
+</div>
+<AnimatedContainer class="circles">
+  {{#animated-each circles use=transition as |circle|}}
+    <div class="circle"><span>{{circle.number}}</span></div>
+  {{/animated-each}}
+</AnimatedContainer>

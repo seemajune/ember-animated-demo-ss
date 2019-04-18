@@ -1,0 +1,21 @@
+{{! template-lint-disable }}
+<div>
+  <menu class="expandable-block">
+    {{#animated-beacon name="source"}}
+    <div {{action "toggleExpand"}}>
+      <p>I'm a beacon \o/ <br />
+       click to expand/collapse</p>
+    </div>
+    {{/animated-beacon}}
+    <AnimatedContainer>
+      {{#animated-if this.isExpanded use=transition}}
+      <menuitem class="expandable-block-item">
+        <span>I'm wrapped in: <br />
+         #animated-if this.isExpanded</span>
+      </menuitem>
+      {{/animated-if}}
+    </AnimatedContainer>
+
+  </menu>
+
+</div>

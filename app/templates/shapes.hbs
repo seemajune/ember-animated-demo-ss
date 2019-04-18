@@ -1,0 +1,14 @@
+{{#animated-value "shapes-route" initialInsertion=true finalRemoval=true use=transition duration=1000}}
+  <div class="shapes">
+    {{#each model as |shape|}}
+      {{#link-to "detail" shape tagName="div"}}
+        <AnimatedContainer>
+          {{#animated-value shape duration=1000 as |s|}}
+            <div class={{s.name}}>
+            </div>
+          {{/animated-value}}
+        </AnimatedContainer>
+      {{/link-to}}
+    {{/each}}
+  </div>
+{{/animated-value}}
